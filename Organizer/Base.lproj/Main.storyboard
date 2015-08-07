@@ -38,7 +38,7 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="组织首页" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="组织首页" image="home" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我" image="first" id="Ymd-Pt-27V"/>
+                    <tabBarItem key="tabBarItem" title="我" image="me" id="Ymd-Pt-27V"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ubM-7M-aaC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +97,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="消息" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="消息" image="bell" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,7 +125,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="bell" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
+        <image name="me" width="30" height="30"/>
     </resources>
 </document>
