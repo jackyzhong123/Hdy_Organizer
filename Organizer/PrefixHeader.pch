@@ -1,0 +1,55 @@
+//
+//  PrefixHeader.pch
+//  SercleClient
+//
+//  Created by GUZUQIANG on 12/2/14.
+//  Copyright (c) 2014 edonesoft. All rights reserved.
+//
+
+
+#ifdef __OBJC__
+
+//#endif
+//#ifndef AnnualCard_PrefixHeader_pch
+//#define AnnualCard_PrefixHeader_pch
+
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+  //  #import "ViewController.h"
+  //  #import "UIHelper.h"
+#import "MKNetworkEngine.h"
+    #import "DataAccessHelper.h"
+    #import "AppConfiguration.h"
+    #import "NavigationPageVC.h"
+#import "WebRequestHelper.h"
+#import "Utilities.h"
+
+
+#endif
+
+
+
+//#define SERVICE_ROOT_PATH @"http://myt.edonesoft.com/weblogic"
+//#define SERVICE_ROOT_PATH @"http://newhuodongyou.chinacloudsites.cn"
+
+
+#define SERVICE_ROOT_PATH @"http://192.168.1.26:47897"
+
+//系统函数简写
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define NotificationCenter [NSNotificationCenter defaultCenter]
+#define UserDefaults [NSUserDefaults standardUserDefaults]
+#define Application [UIApplication sharedApplication]
+#define MainBundle [NSBundle mainBundle]
+#define ROOTVC [UIHelper rootvc]
+#define AppConfig [AppConfiguration sharedInstance]
+
+
+
+//系统颜色定义
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+#define Color_Page_White RGB(254,254,254)
+#define Color_Text_Black RGB(3,3,3)

@@ -17,6 +17,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    NSString* accessTokenStr=[[NSUserDefaults standardUserDefaults]objectForKey:@"access_token"];
+    
+    if ([accessTokenStr length]==0) {
+        //go 注册页面
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"LoginSB" bundle:nil];
+        self.window.rootViewController = [storyboard instantiateInitialViewController];
+    
+    }else
+    {
+        //正常页面
+        
+    }
+    
+    
+    
     return YES;
 }
 
