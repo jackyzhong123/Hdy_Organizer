@@ -10,7 +10,7 @@
 #import "MJRefresh.h"
 #import "TableViewPageVC.h"
 
-@interface AlbumListVC :TableViewPageVC <UITableViewDelegate,UITableViewDataSource>
+@interface AlbumListVC1 :TableViewPageVC <UITableViewDelegate,UITableViewDataSource>
 //保存数据列表
 @property (nonatomic,strong) NSMutableArray* listData;
 @end

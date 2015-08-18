@@ -108,8 +108,13 @@
 		33DF7CBF1B820704002A5B2D /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DF7CAD1B820704002A5B2D /* UIImageView+HighlightedWebCache.m */; };
 		33DF7CC01B820704002A5B2D /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DF7CAF1B820704002A5B2D /* UIImageView+WebCache.m */; };
 		33DF7CC11B820704002A5B2D /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DF7CB11B820704002A5B2D /* UIView+WebCacheOperation.m */; };
-		33DF7CC71B821DAE002A5B2D /* AlbumListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DF7CC61B821DAE002A5B2D /* AlbumListVC.m */; };
+		33DF7CC71B821DAE002A5B2D /* AlbumListVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DF7CC61B821DAE002A5B2D /* AlbumListVC1.m */; };
 		33F0358E1B823461002ECF39 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F0358D1B823461002ECF39 /* placeholder.png */; };
+		33F035911B82B64F002ECF39 /* PlaceListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F035901B82B64F002ECF39 /* PlaceListVC.m */; };
+		33F035941B82B6A5002ECF39 /* CollectionViewPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F035931B82B6A5002ECF39 /* CollectionViewPageVC.m */; };
+		33F0359D1B82BECE002ECF39 /* CVCAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F0359C1B82BECE002ECF39 /* CVCAlbum.m */; };
+		33F035A01B82F92C002ECF39 /* AlbumsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F0359F1B82F92C002ECF39 /* AlbumsListVC.m */; };
+		33F035A31B831E1F002ECF39 /* AlbumDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F035A21B831E1F002ECF39 /* AlbumDetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -326,9 +331,19 @@
 		33DF7CAF1B820704002A5B2D /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		33DF7CB01B820704002A5B2D /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		33DF7CB11B820704002A5B2D /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		33DF7CC51B821DAE002A5B2D /* AlbumListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlbumListVC.h; path = Block/AlbumListVC.h; sourceTree = "<group>"; };
-		33DF7CC61B821DAE002A5B2D /* AlbumListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlbumListVC.m; path = Block/AlbumListVC.m; sourceTree = "<group>"; };
+		33DF7CC51B821DAE002A5B2D /* AlbumListVC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlbumListVC1.h; path = Block/AlbumListVC1.h; sourceTree = "<group>"; };
+		33DF7CC61B821DAE002A5B2D /* AlbumListVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlbumListVC1.m; path = Block/AlbumListVC1.m; sourceTree = "<group>"; };
 		33F0358D1B823461002ECF39 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		33F0358F1B82B64F002ECF39 /* PlaceListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceListVC.h; path = Block/PlaceListVC.h; sourceTree = "<group>"; };
+		33F035901B82B64F002ECF39 /* PlaceListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaceListVC.m; path = Block/PlaceListVC.m; sourceTree = "<group>"; };
+		33F035921B82B6A5002ECF39 /* CollectionViewPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewPageVC.h; sourceTree = "<group>"; };
+		33F035931B82B6A5002ECF39 /* CollectionViewPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewPageVC.m; sourceTree = "<group>"; };
+		33F0359B1B82BECE002ECF39 /* CVCAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVCAlbum.h; path = PageUI/CVCAlbum.h; sourceTree = "<group>"; };
+		33F0359C1B82BECE002ECF39 /* CVCAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CVCAlbum.m; path = PageUI/CVCAlbum.m; sourceTree = "<group>"; };
+		33F0359E1B82F92C002ECF39 /* AlbumsListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlbumsListVC.h; path = Block/AlbumsListVC.h; sourceTree = "<group>"; };
+		33F0359F1B82F92C002ECF39 /* AlbumsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlbumsListVC.m; path = Block/AlbumsListVC.m; sourceTree = "<group>"; };
+		33F035A11B831E1F002ECF39 /* AlbumDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlbumDetailVC.h; path = Block/AlbumDetailVC.h; sourceTree = "<group>"; };
+		33F035A21B831E1F002ECF39 /* AlbumDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlbumDetailVC.m; path = Block/AlbumDetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -718,6 +733,8 @@
 			children = (
 				33ABD8821B7F5EB8007E933C /* CVCFunction.h */,
 				33ABD8831B7F5EB8007E933C /* CVCFunction.m */,
+				33F0359B1B82BECE002ECF39 /* CVCAlbum.h */,
+				33F0359C1B82BECE002ECF39 /* CVCAlbum.m */,
 			);
 			name = PageUI;
 			sourceTree = "<group>";
@@ -727,8 +744,14 @@
 			children = (
 				33ABD88B1B81A1E2007E933C /* AddNewAlbumVC.h */,
 				33ABD88C1B81A1E2007E933C /* AddNewAlbumVC.m */,
-				33DF7CC51B821DAE002A5B2D /* AlbumListVC.h */,
-				33DF7CC61B821DAE002A5B2D /* AlbumListVC.m */,
+				33DF7CC51B821DAE002A5B2D /* AlbumListVC1.h */,
+				33DF7CC61B821DAE002A5B2D /* AlbumListVC1.m */,
+				33F0358F1B82B64F002ECF39 /* PlaceListVC.h */,
+				33F035901B82B64F002ECF39 /* PlaceListVC.m */,
+				33F0359E1B82F92C002ECF39 /* AlbumsListVC.h */,
+				33F0359F1B82F92C002ECF39 /* AlbumsListVC.m */,
+				33F035A11B831E1F002ECF39 /* AlbumDetailVC.h */,
+				33F035A21B831E1F002ECF39 /* AlbumDetailVC.m */,
 			);
 			name = Block;
 			sourceTree = "<group>";
@@ -776,6 +799,8 @@
 				33ABD8481B7E495D007E933C /* LoginSB.storyboard */,
 				339482BE1B82238200FEAC49 /* TableViewPageVC.h */,
 				339482BF1B82238200FEAC49 /* TableViewPageVC.m */,
+				33F035921B82B6A5002ECF39 /* CollectionViewPageVC.h */,
+				33F035931B82B6A5002ECF39 /* CollectionViewPageVC.m */,
 			);
 			path = Organizer;
 			sourceTree = "<group>";
@@ -985,9 +1010,11 @@
 				33DF7CBF1B820704002A5B2D /* UIImageView+HighlightedWebCache.m in Sources */,
 				33ABD7D11B7CADB3007E933C /* MJRefreshAutoStateFooter.m in Sources */,
 				33ABD7871B7CACDF007E933C /* NSData+MKBase64.m in Sources */,
+				33F035A31B831E1F002ECF39 /* AlbumDetailVC.m in Sources */,
 				33ABD78D1B7CACDF007E933C /* MKNetworkEngine.m in Sources */,
 				33ABD7901B7CACDF007E933C /* PECropRectView.m in Sources */,
 				33ABD8461B7E3A57007E933C /* NavigationPageVC.m in Sources */,
+				33F035941B82B6A5002ECF39 /* CollectionViewPageVC.m in Sources */,
 				33ABD8291B7CC82A007E933C /* TextBoxView.m in Sources */,
 				33DF7CB21B820704002A5B2D /* MKAnnotationView+WebCache.m in Sources */,
 				33ABD82B1B7CC82A007E933C /* NavigationRightView.m in Sources */,
@@ -1002,16 +1029,18 @@
 				33ABD71D1B7CA8E4007E933C /* GalleryItemModel.m in Sources */,
 				33D441B31B67E60500FC406C /* SecondViewController.m in Sources */,
 				33ABD87E1B7F425A007E933C /* Utilities.m in Sources */,
+				33F035A01B82F92C002ECF39 /* AlbumsListVC.m in Sources */,
 				33ABD8281B7CC82A007E933C /* StrikeoutLabel.m in Sources */,
 				33ABD8751B7E4F9A007E933C /* LoginViewController.m in Sources */,
 				33ABD7881B7CACDF007E933C /* NSDate+RFC1123.m in Sources */,
 				33ABD8271B7CC82A007E933C /* RoundButton.m in Sources */,
 				33ABD8781B7E4FC1007E933C /* WelcomeViewController.m in Sources */,
 				33D441AD1B67E60500FC406C /* AppDelegate.m in Sources */,
-				33DF7CC71B821DAE002A5B2D /* AlbumListVC.m in Sources */,
+				33DF7CC71B821DAE002A5B2D /* AlbumListVC1.m in Sources */,
 				33ABD7DB1B7CADB3007E933C /* UIScrollView+MJRefresh.m in Sources */,
 				33DF7CC01B820704002A5B2D /* UIImageView+WebCache.m in Sources */,
 				33ABD7D31B7CADB3007E933C /* MJRefreshBackNormalFooter.m in Sources */,
+				33F0359D1B82BECE002ECF39 /* CVCAlbum.m in Sources */,
 				33DF7CB81B820704002A5B2D /* SDWebImageDownloaderOperation.m in Sources */,
 				33ABD78B1B7CACDF007E933C /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
 				33ABD8231B7CC82A007E933C /* AdvertisementView.m in Sources */,
@@ -1038,6 +1067,7 @@
 				33ABD7D91B7CADB3007E933C /* MJRefreshConst.m in Sources */,
 				33ABD7D61B7CADB3007E933C /* MJRefreshNormalHeader.m in Sources */,
 				33DF7CB51B820704002A5B2D /* SDWebImageCompat.m in Sources */,
+				33F035911B82B64F002ECF39 /* PlaceListVC.m in Sources */,
 				33ABD7CC1B7CADB3007E933C /* MJRefreshComponent.m in Sources */,
 				33ABD88D1B81A1E2007E933C /* AddNewAlbumVC.m in Sources */,
 			);
