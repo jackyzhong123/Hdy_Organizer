@@ -51,14 +51,14 @@
 //    [dic setValue:@"添加活动" forKey:@"title"];
 //    [dic setValue:@"活动一览" forKey:@"title"];
     NSMutableArray *array=[[NSMutableArray alloc] init];
-    NSDictionary *dic=[NSDictionary dictionaryWithObjectsAndKeys:@"添加活动",@"title",@"0",@"XibName", nil];
+    NSDictionary *dic=[NSDictionary dictionaryWithObjectsAndKeys:@"添加活动",@"title",@"AddActivity",@"XibName", nil];
     
     [array addObject:dic];
     
     dic=[NSDictionary dictionaryWithObjectsAndKeys:@"添加专辑",@"title",@"AddNewAlbum",@"XibName", nil];
     [array addObject:dic];
     
-    dic=[NSDictionary dictionaryWithObjectsAndKeys:@"添加地点",@"title",@"1",@"XibName", nil];
+    dic=[NSDictionary dictionaryWithObjectsAndKeys:@"添加地点",@"title",@"AddPlace",@"XibName", nil];
     [array addObject:dic];
     
     
@@ -74,7 +74,7 @@
     
    
     
-    dic=[NSDictionary dictionaryWithObjectsAndKeys:@"地点一览",@"title",@"1",@"XibName", nil];
+    dic=[NSDictionary dictionaryWithObjectsAndKeys:@"地点一览",@"title",@"PlaceList",@"XibName", nil];
     [array addObject:dic];
     
     

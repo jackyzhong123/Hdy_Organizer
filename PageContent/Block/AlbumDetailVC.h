@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AlbumDetailVC : NavigationPageVC
+@interface AlbumDetailVC : NavigationPageVC<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (strong ,nonatomic) NSString *AlbumId;
 @property (nonatomic,strong) NSMutableArray* listData;
@@ -17,5 +17,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *txtAlbumName;
 - (IBAction)btnSave:(id)sender;
+
+
 
 @end

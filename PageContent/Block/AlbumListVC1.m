@@ -108,7 +108,7 @@
                        placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
 
     cell.textLabel.text=[dict objectForKey:@"AlbumName"];
-
+    
     
     return cell;
 }

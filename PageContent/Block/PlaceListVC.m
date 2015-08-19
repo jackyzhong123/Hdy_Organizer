@@ -9,6 +9,7 @@
 #import "PlaceListVC.h"
 #import "MJRefresh.h"
 #import "UIImageView+WebCache.h"
+#import "LocationDetailVC.h"
 
 @interface PlaceListVC ()
 
@@ -19,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    self.tableView.delegate=self;
+//    self.tableView.dataSource=self;
     
     
     self.listData=[[NSMutableArray alloc] init];
@@ -100,15 +103,44 @@
     
     NSInteger row = indexPath.row;
     NSDictionary *dict = [self.listData objectAtIndex:row];
-    cell.imageView.image= [UIImage imageNamed:[dict objectForKey:@"AlbumIcon"]];
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:[dict objectForKey:@"AlbumIcon"]]
-                      placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+    //cell.imageView.image= [UIImage imageNamed:[dict objectForKey:@"AlbumIcon"]];
+   // [cell.imageView sd_setImageWithURL:[NSURL URLWithString:[dict objectForKey:@"AlbumIcon"]]
+         //             placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
     
-    cell.textLabel.text=[dict objectForKey:@"AlbumName"];
+    cell.textLabel.text=[dict objectForKey:@"LocationName"];
     
     
     return cell;
 }
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   // NSDictionary *event = [self.listData objectAtIndex:(indexPath.row)];
+    [self performSegueWithIdentifier:@"PlaceDetail" sender:self];
+
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"PlaceDetail"]) {
+        //
+//        AlbumDetailVC *vc=segue.destinationViewController;
+//        NSIndexPath *indexPath=[[self.collectionView indexPathsForSelectedItems] firstObject];
+//        
+//        NSDictionary *obj=[self.listData objectAtIndex:indexPath.row];
+//        vc.AlbumId=[obj objectForKey:@"AlbumId"];
+//        vc.listData=self.listData;
+        
+        LocationDetailVC *vc=segue.destinationViewController;
+        NSIndexPath *indexPath=[self.tableView indexPathForSelectedRow];
+                NSDictionary *obj=[self.listData objectAtIndex:indexPath.row];
+                vc.LocationId=[obj objectForKey:@"id"];
+              vc.listData=self.listData;
+        
+    }
+}
+
 
 
 @end

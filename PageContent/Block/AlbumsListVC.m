@@ -168,18 +168,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSDictionary *event = [self.listData objectAtIndex:(indexPath.row)];
-    
-   // NSPredicate *preActive=[NSPredicate predicateWithFormat:@"isActive == 1"];
-    
-     
-    
-    
-    
-  //  UIStoryboard* mainStoryBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-     [self performSegueWithIdentifier:@"AlbumDetail" sender:self];
-    
-    
+    [self performSegueWithIdentifier:@"AlbumDetail" sender:self];
     
 }
 

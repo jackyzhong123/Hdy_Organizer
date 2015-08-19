@@ -115,6 +115,11 @@
 		33F0359D1B82BECE002ECF39 /* CVCAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F0359C1B82BECE002ECF39 /* CVCAlbum.m */; };
 		33F035A01B82F92C002ECF39 /* AlbumsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F0359F1B82F92C002ECF39 /* AlbumsListVC.m */; };
 		33F035A31B831E1F002ECF39 /* AlbumDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F035A21B831E1F002ECF39 /* AlbumDetailVC.m */; };
+		33F035A51B840C17002ECF39 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F035A41B840C17002ECF39 /* MapKit.framework */; };
+		33F035AB1B840D41002ECF39 /* AddNewPlaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F035AA1B840D41002ECF39 /* AddNewPlaceVC.m */; };
+		33F035AE1B843F94002ECF39 /* MapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F035AD1B843F94002ECF39 /* MapLocation.m */; };
+		33F035B01B8449C0002ECF39 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F035AF1B8449C0002ECF39 /* CoreLocation.framework */; };
+		33F035B31B849650002ECF39 /* LocationDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F035B21B849650002ECF39 /* LocationDetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,6 +349,14 @@
 		33F0359F1B82F92C002ECF39 /* AlbumsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlbumsListVC.m; path = Block/AlbumsListVC.m; sourceTree = "<group>"; };
 		33F035A11B831E1F002ECF39 /* AlbumDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlbumDetailVC.h; path = Block/AlbumDetailVC.h; sourceTree = "<group>"; };
 		33F035A21B831E1F002ECF39 /* AlbumDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlbumDetailVC.m; path = Block/AlbumDetailVC.m; sourceTree = "<group>"; };
+		33F035A41B840C17002ECF39 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		33F035A91B840D41002ECF39 /* AddNewPlaceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewPlaceVC.h; sourceTree = "<group>"; };
+		33F035AA1B840D41002ECF39 /* AddNewPlaceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewPlaceVC.m; sourceTree = "<group>"; };
+		33F035AC1B843F94002ECF39 /* MapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocation.h; sourceTree = "<group>"; };
+		33F035AD1B843F94002ECF39 /* MapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocation.m; sourceTree = "<group>"; };
+		33F035AF1B8449C0002ECF39 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		33F035B11B849650002ECF39 /* LocationDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationDetailVC.h; path = Block/LocationDetailVC.h; sourceTree = "<group>"; };
+		33F035B21B849650002ECF39 /* LocationDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationDetailVC.m; path = Block/LocationDetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +364,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F035B01B8449C0002ECF39 /* CoreLocation.framework in Frameworks */,
+				33F035A51B840C17002ECF39 /* MapKit.framework in Frameworks */,
 				33ABD8431B7CEC84007E933C /* QuartzCore.framework in Frameworks */,
 				33ABD8411B7CEC7B007E933C /* CoreVideo.framework in Frameworks */,
 				33ABD83F1B7CEC73007E933C /* CoreMedia.framework in Frameworks */,
@@ -390,6 +405,8 @@
 				33ABD7101B7CA8E4007E933C /* AdvertisementModel.m */,
 				33ABD7111B7CA8E4007E933C /* GalleryItemModel.h */,
 				33ABD7121B7CA8E4007E933C /* GalleryItemModel.m */,
+				33F035AC1B843F94002ECF39 /* MapLocation.h */,
+				33F035AD1B843F94002ECF39 /* MapLocation.m */,
 			);
 			path = datamodel;
 			sourceTree = "<group>";
@@ -693,6 +710,7 @@
 		33ABD8371B7CD815007E933C /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				33F035A41B840C17002ECF39 /* MapKit.framework */,
 				33ABD8421B7CEC84007E933C /* QuartzCore.framework */,
 				33ABD8401B7CEC7B007E933C /* CoreVideo.framework */,
 				33ABD83E1B7CEC73007E933C /* CoreMedia.framework */,
@@ -752,6 +770,10 @@
 				33F0359F1B82F92C002ECF39 /* AlbumsListVC.m */,
 				33F035A11B831E1F002ECF39 /* AlbumDetailVC.h */,
 				33F035A21B831E1F002ECF39 /* AlbumDetailVC.m */,
+				33F035A91B840D41002ECF39 /* AddNewPlaceVC.h */,
+				33F035AA1B840D41002ECF39 /* AddNewPlaceVC.m */,
+				33F035B11B849650002ECF39 /* LocationDetailVC.h */,
+				33F035B21B849650002ECF39 /* LocationDetailVC.m */,
 			);
 			name = Block;
 			sourceTree = "<group>";
@@ -759,6 +781,7 @@
 		33D4419B1B67E60500FC406C = {
 			isa = PBXGroup;
 			children = (
+				33F035AF1B8449C0002ECF39 /* CoreLocation.framework */,
 				33ABD86D1B7E4E9B007E933C /* PageContent */,
 				33ABD8371B7CD815007E933C /* Framework */,
 				33ABD7E01B7CC82A007E933C /* PageComponent */,
@@ -995,11 +1018,13 @@
 				33ABD79C1B7CACDF007E933C /* ZbarOverlayView.m in Sources */,
 				33ABD7CF1B7CADB3007E933C /* MJRefreshAutoGifFooter.m in Sources */,
 				33ABD7D41B7CADB3007E933C /* MJRefreshBackStateFooter.m in Sources */,
+				33F035AE1B843F94002ECF39 /* MapLocation.m in Sources */,
 				33ABD7DC1B7CADB3007E933C /* UIView+MJExtension.m in Sources */,
 				33ABD7CD1B7CADB3007E933C /* MJRefreshFooter.m in Sources */,
 				33DF7CB61B820704002A5B2D /* SDWebImageDecoder.m in Sources */,
 				33ABD78A1B7CACDF007E933C /* NSString+MKNetworkKitAdditions.m in Sources */,
 				33DF7CBA1B820704002A5B2D /* SDWebImagePrefetcher.m in Sources */,
+				33F035AB1B840D41002ECF39 /* AddNewPlaceVC.m in Sources */,
 				33ABD7CA1B7CADB3007E933C /* MJRefreshAutoFooter.m in Sources */,
 				33ABD7911B7CACDF007E933C /* PECropView.m in Sources */,
 				33ABD7DA1B7CADB3007E933C /* UIScrollView+MJExtension.m in Sources */,
@@ -1069,6 +1094,7 @@
 				33DF7CB51B820704002A5B2D /* SDWebImageCompat.m in Sources */,
 				33F035911B82B64F002ECF39 /* PlaceListVC.m in Sources */,
 				33ABD7CC1B7CADB3007E933C /* MJRefreshComponent.m in Sources */,
+				33F035B31B849650002ECF39 /* LocationDetailVC.m in Sources */,
 				33ABD88D1B81A1E2007E933C /* AddNewAlbumVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
